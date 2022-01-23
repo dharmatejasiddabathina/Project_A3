@@ -10,5 +10,14 @@ stage("checkout"){
   }
 
        }
+	 
+	 stage("build"){
+ steps{
+ script{
+   sh 'mvn clear install'
+  }
+  }
+
+       }
                  }
 }
