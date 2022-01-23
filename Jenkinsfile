@@ -4,7 +4,8 @@ agent any
 stage("checkout"){
  steps{
  script{
-  sh 'checkout scm'
+    deleteDir()
+				checkout scm
   }
   }
 
