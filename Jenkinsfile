@@ -14,7 +14,7 @@ stage("checkout"){
 	 stage("build"){
  steps{
  script{
-   sh 'mvn clear install'
+   sh 'mvn clean install'
   }
   }
 
